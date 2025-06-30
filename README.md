@@ -14,5 +14,5 @@ Per scaricare il manuale cliccate su [questo link](https://raw.githubusercontent
 
 
 
-Ultimo aggiornamento: 2025-07-01 - Update README.md
+Ultimo aggiornamento: 2025-07-01 - Correzioni minori, aggiornato link download.md
 
