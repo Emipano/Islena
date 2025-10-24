@@ -25,6 +25,7 @@ citecolor=softroyalblue]{hyperref}
 \usepackage{csquotes}
 \usepackage[T1]{fontenc}
 \usepackage{tikz}
+\usetikzlibrary{shapes.callouts,positioning}
 \usepackage{enumitem}
 \usepackage{etoolbox}
 \usepackage[nf]{coelacanth}
@@ -33,6 +34,8 @@ citecolor=softroyalblue]{hyperref}
 \usepackage{fancybox}
 \usepackage[most]{tcolorbox}
 \usepackage{afterpage}
+\usepackage{tikzducks}
+
 
 
 % Define custom colors for the D&D theme
@@ -157,7 +160,24 @@ PS: Se trovate cazzate di ortografia, robe che non tornano o che non capite e al
 \\
 - Emipano
 
+\vspace{3cm}
 
+\begin{tikzpicture}
+	
+	\duck[scale=3, viking, torch, yshift=-0.6cm, xshift=1.4cm]
+
+	\node[
+	ellipse callout,
+	callout absolute pointer={(4.8,3.3)},
+	fill=blue!5,
+	draw=black,
+	thick,
+	align=center,
+	inner sep=6pt
+	] at (-0.6,5)
+	{\large Questa versione è del \bfseries\today,\\
+	\large\href{https://emipano.github.io/Islena-Ambientazione-DnD/}{clicca qui} per controllare se ci sono aggiornamenti!};
+\end{tikzpicture}
 
 \partimage{cosmpart1.png}
 \part{Cosmologia}
@@ -1495,7 +1515,6 @@ Sapienza Magica 6 gradi, abilità di lanciare incantesimi spontaneamente\\
 \textbf{Benefici}\\
 Quando applichi un talento di metamagia a un incantesimo lanciato spontaneamente, il lancio impiega solo il tempo di lancio normale.
 
-\subsection{Pozione Rapida [skill trick]}
 
 \end{document}
 	
