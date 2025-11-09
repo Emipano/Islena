@@ -10,7 +10,7 @@ _Dovrebbe_ essere tutto spoiler free ma vi comunque consiglio di non curiosare n
 
 ## Download pdf
 Il manuale è in continuo sviluppo: nuove sezioni, approfondimenti e correzioni verranno aggiunti con il tempo.
-Per scaricare il manuale cliccate su [questo link](https://raw.githubusercontent.com/Emipano/Islena-Ambientazione-DnD/main/Guida%20all%27ambientazione%20di%20Islena.pdf)
+Per scaricare il manuale cliccate su [questo link](https://raw.githubusercontent.com/Emipano/Islena/main/Guida%20all%27ambientazione%20di%20Islena.pdf)
 
 
 Ultimo aggiornamento: 2025-11-09 - Aggiornati link
