@@ -13,5 +13,5 @@ Il manuale è in continuo sviluppo: nuove sezioni, approfondimenti e correzioni 
 Per scaricare il manuale cliccate su [questo link](https://raw.githubusercontent.com/Emipano/Islena/main/Guida%20all%27ambientazione%20di%20Islena.pdf)
 
 
-Ultimo aggiornamento: 2026-01-20 - modifica estetica al controllo aggiornamenti
+Ultimo aggiornamento: 2026-02-13 - Aggiunto talento Metamagia Divina
 
