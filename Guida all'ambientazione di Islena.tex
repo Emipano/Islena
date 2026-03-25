@@ -141,12 +141,13 @@ citecolor=softroyalblue]{hyperref}
 %\pagecolor{Ivory}
 \pagecolor[rgb]{0.98, 0.98, 0.96}
 
-%\begin{multicols}{2}
+\begin{multicols}{2}
 \tableofcontents
-%\end{multicols}
+\end{multicols}
 
-\newpage
-\clearpage
+%\newpage
+%\clearpage
+\vfil
 \section{Introduzione}
 Questo documento vuole essere una guida all'ambientazione che useremo nella campagna. Ho cercato di creare una cosmologia circa originale che rimane abbastanza legata alla cosmologia canonica di D\&D per evitare problemi con incantesimi, spostamenti tra piani e cose simili, divinità più o meno serie e una storia del continente per niente freebootata.\\
 La campagna sarà ambientata nello mirabilantes continente di Islena, non è dato sapere su quale pianeta e per quanto vi riguarda non è dato sapere manco se esistono i pianeti. \\
@@ -161,8 +162,9 @@ PS: Se trovate cazzate di ortografia, robe che non tornano o che non capite e al
 \\
 - Emipano
 
-\vspace{1.7cm}
-
+\newpage
+\vspace*{10cm}
+\hspace*{-1.5cm}
 \begin{tikzpicture}
 	
 	\node[yshift=-1.6cm, xshift=5cm] 
@@ -170,13 +172,14 @@ PS: Se trovate cazzate di ortografia, robe che non tornano o che non capite e al
 	
 	\node[
 	ellipse callout,
-	callout absolute pointer={(2.8,2.3)},
+	callout absolute pointer={(2.5,2.3)},
 	fill=blue!5,
 	draw=black,
 	thick,
 	align=center,
-	inner sep=6pt
-	] at (-1,5)
+	inner sep=6pt,
+	scale = 1.1
+	] at (-2,5)
 	{\Large Questa versione è del \textbf{\today},\\
 	\Large\href{https://emipano.github.io/Islena/}{\textbf{clicca qui}} per controllare se ci sono aggiornamenti!};
 	
@@ -1338,7 +1341,7 @@ Lontani parenti degli umani, gli Azuril sono esperti pescatori e commercianti, d
 
 \end{multicols}
 
-\chapter{Classi e CdP}
+\chapter{Classi di Prestigio}
 \begin{multicols}{2}
 \section{Incantatrix}
 
@@ -1363,21 +1366,21 @@ Se un personaggio apparteneva a più di una classe di incantatori arcani che con
 
 \textbf{Studi focalizzati (Str):} Al 1° livello, l'incantatrix rinuncia a una scuola di magia per potersi focalizzare meglio nelle scuole rimanenti. Deve scegliere una scuola di magia diversa che non sia abiurazione o divinazione come scuola proibita. Questa scuola proibita va ad aggiungersi ad altre eventuali scuole. Quindi, se un mago specializzato assume questa classe di prestigio, ha tre scuole proibite invece di due.\\
 
-\textbf{Trucchi metamagici:} Un'incantatrix può usare un trucco metamagico un numero di volte al giorno pari a 1 + Mod Int. Un'incantatrix conosce i seguenti trucchi metamagici:
+\textbf{Trucchi metamagici:} Un'incantatrix può usare un trucco metamagico un numero di volte al giorno pari a $1$ + Mod Int. Un'incantatrix conosce i seguenti trucchi metamagici:
 
-\textit{Metamagia collaborativa (Sop):} Al 2° livello, un incantatrix acquisisce la capacità di applicare qualsiasi talento di metamagia posseduto (fatta eccezione per Incantesimi Immobili, Rapidi o Silenziosi) a un incantesimo lanciato da un incantatore alleato e consenziente. L'incantatore non ha bisogno di preparare l'incantesimo nella sua forma di metamagia o in uno slot di incantesimo di livello più alto; l'incantatrix si limita semplicemente a modificare l'incantesimo nel corso del lancio. Usare questa capacità è un'azione standard che provoca un attacco di opportunità, proprio come quando si lancia un incantesimo, sebbene l'incantatrix possa usare l'abilità di Concentrazione con questa capacità come se stesse lanciando sulla difensiva. L'incantatrix deve superare una prova di Sapienza Magica (CD $18$ + [$3$ x il livello dell'incantesimo modificato]) per riuscirci. Per \enquote*{livello modificato dell'incantesimo} si intende il livello dello slot incantesimo che l'incantesimo occuperebbe se fosse stato preparato applicando su di esso il talento di metamagia. Qualsiasi incremento del livello dell'incantesimo derivato da altri talenti di metamagia applicati dall'incantatore deve essere contagiato al fine di determinare il livello modificato dell'incantesimo. Ad esempio, se un'incantatrix applica il talento Incantesimi Massimizzati all'incantesimo catena di fulmini di un alleato, il livello modificato dell'incantesimo è il 9° (incantesimo di 6° livello, +3 del talento Incantesimi Massimizzati) e la CD è pari a $18$ + ($3$ x $9$) = $45$. Se l'incantatrix applica lo stesso talento all'incantesimo catena di fulmini silenzioso, il livello modificato dell'incantesimo è il 10° e la CD di Sapienza Magica è pari a $48$.
+\textit{Metamagia collaborativa (Sop):} Al 2° livello, un incantatrix acquisisce la capacità di applicare qualsiasi talento di metamagia posseduto (fatta eccezione per Incantesimi Immobili, Rapidi o Silenziosi) a un incantesimo lanciato da un incantatore alleato e consenziente. L'incantatore non ha bisogno di preparare l'incantesimo nella sua forma di metamagia o in uno slot di incantesimo di livello più alto; l'incantatrix si limita semplicemente a modificare l'incantesimo nel corso del lancio. Usare questa capacità è un'azione standard che provoca un attacco di opportunità, proprio come quando si lancia un incantesimo, sebbene l'incantatrix possa usare l'abilità di Concentrazione con questa capacità come se stesse lanciando sulla difensiva. L'incantatrix deve superare una prova di Sapienza Magica (CD $18$ + [$3$ x il livello dell'incantesimo modificato]) per riuscirci. Per \enquote*{livello modificato dell'incantesimo} si intende il livello dello slot incantesimo che l'incantesimo occuperebbe se fosse stato preparato applicando su di esso il talento di metamagia. Qualsiasi incremento del livello dell'incantesimo derivato da altri talenti di metamagia applicati dall'incantatore deve essere contagiato al fine di determinare il livello modificato dell'incantesimo. Il livello modificato di un'incantesimo non può superare il massimo livello di incantesimo che l'incantatrix è in grado di lanciare. Ad esempio, se un'incantatrix applica il talento Incantesimi Massimizzati all'incantesimo catena di fulmini di un alleato, il livello modificato dell'incantesimo è il 9° (incantesimo di 6° livello, +3 del talento Incantesimi Massimizzati) e la CD è pari a $18$ + ($3$ x $9$) = $45$. Se l'incantatrix applicasse lo stesso talento all'incantesimo catena di fulmini silenziosa, il livello modificato dell'incantesimo sarebbe il $10$°, ma nessun personaggio ha slot incantesimo di $10$° livello quindi l'incantatrix non può applicare il talento in questo caso.
 
-\textit{Effetto di metamagia (Sop):} Al 3° livello, un'incantatrix può tentare di applicare qualsiasi talento di metamagia posseduto a un effetto magico persistente già in atto. Ad esempio, potrebbe usare Incantesimi Estesi per prolungare la durata di muro di fuoco o Incantesimi Massimizzati per massimizzare il danno inferto da una nube mortale. Per usare questa capacità, l'incantatrix deve trovarsi adiacente o all'interno dell'effetto magico e superare una prova di Sapienza Magica (CD $18$ + [$3$ x livello modificato dell'incantesimo]). Per \enquote*{livello modificato dell'incantesimo} si intende il livello dello slot incantesimo che l'incantesimo occuperebbe se fosse stato preparato applicando su di esso il talento di metamagia. Gli incrementi di slot incantesimo relativi ai talenti di metamagia applicati per influenzare il lancio dell'incantesimo (come ad esempio Incantesimi Immobili, Incantesimi Rapidi o Incantesimi Silenziosi) non vengono conteggiati per determinare il livello modificato dell'incantesimo, mentre i modificatori per quegli effetti di metamagia che cambiano l'effetto dell'incantesimo (come ad esempio Incantesimi Ampliati, Ingranditi o Potenziati) vengono conteggiati.
-Ad esempio, applicando il talento Incantesimi Estesi a un muro di fuoco si ottiene un livello modificato di incantesimo pari a 5 (incantesimo di 4° livello +1 per il talento Incantesimi Estesi), quindi la CD sarebbe pari a $18$ + ($3$ x $5$)= $33$. Se il muro di fuoco fosse stato lanciato con l'applicazione del talento Incantesimi Silenziosi, la CD sarebbe rimasta comunque $33$, dal momento che quel talento agisce sul metodo di lancio dell'incantesimo, e non sul suo effetto. D'altro canto, estendere un muro di fuoco potenziato avrebbe portato il livello modificato di incantesimo a 7 e la CD di Sapienza Magica a $39$.
+\textit{Effetto di metamagia (Sop):} Al 3° livello, un'incantatrix può tentare di applicare qualsiasi talento di metamagia posseduto a un effetto magico persistente già in atto. Ad esempio, potrebbe usare Incantesimi Estesi per prolungare la durata di muro di fuoco o Incantesimi Massimizzati per massimizzare il danno inferto da una nube mortale. Per usare questa capacità, l'incantatrix deve trovarsi adiacente o all'interno dell'effetto magico e superare una prova di Sapienza Magica (CD $18$ + [$3$ x livello modificato dell'incantesimo]). Per \enquote*{livello modificato dell'incantesimo} si intende il livello dello slot incantesimo che l'incantesimo occuperebbe se fosse stato preparato applicando su di esso il talento di metamagia. Gli incrementi di slot incantesimo relativi ai talenti di metamagia applicati per influenzare il lancio dell'incantesimo (come ad esempio Incantesimi Immobili, Incantesimi Rapidi o Incantesimi Silenziosi) non vengono conteggiati per determinare il livello modificato dell'incantesimo, mentre i modificatori per quegli effetti di metamagia che cambiano l'effetto dell'incantesimo (come ad esempio Incantesimi Ampliati, Ingranditi o Potenziati) vengono conteggiati. Il livello modificato di un'incantesimo non può superare il massimo livello di incantesimo che l'incantatrix è in grado di lanciare.
+Ad esempio, applicando il talento Incantesimi Estesi a un muro di fuoco si ottiene un livello modificato di incantesimo pari a 5 (incantesimo di 4° livello +$1$ per il talento Incantesimi Estesi), quindi la CD sarebbe pari a $18$ + ($3$ x $5$)= $33$. Se il muro di fuoco fosse stato lanciato con l'applicazione del talento Incantesimi Silenziosi, la CD sarebbe rimasta comunque $33$, dal momento che quel talento agisce sul metodo di lancio dell'incantesimo, e non sul suo effetto. D'altro canto, estendere un muro di fuoco potenziato avrebbe portato il livello modificato di incantesimo a 7 e la CD di Sapienza Magica a $39$.
+Usare questa capacità è un'azione di round completo che provoca attacchi di opportunità.
 
-Usare questa capacità è un'azione di round completo che provoca attacchi di opportunità.\\
-
-\textbf{Metamagia sugli incantesimi ad attivazione (Sop):} Al 5° livello, un'incantatrix acquisisce la capacità di applicare un talento di metamagia posseduto all'effetto di un oggetto magico ad attivazione (in genere una bacchetta). Per utilizzare questa capacità, deve possedere il talento di creazione oggetto appropriato per la creazione dell'oggetto magico ad attivazione che sta usando. Usare la metamagia sugli incantesimi ad attivazione consuma un numero di cariche aggiuntive dlel'oggetto pari al numero di livelli effettivi dell'incantesimo che il talento di metamagia applicherebbe al livello dell'incantesimo. Ad esempio, un'incantatrix può usare Incantesimi Rapidi per modificare un incantesimo lanciato da una bacchetta consumando 5 cariche (1 + 4 cariche aggiuntive per l'incremento di slot incantesimo). In alternativa, può applicare Incantesimi Potenziati all'effetto consumando 3 cariche, o attivarlo silenziosamente, consumando 2 cariche. Incantesimi Immobili non conferisce alcun beneficio se applicato a un oggetto magico ad attivazione.
+\textbf{Metamagia sugli incantesimi ad attivazione (Sop):} Al 5° livello, un'incantatrix acquisisce la capacità di applicare un talento di metamagia posseduto all'effetto di un oggetto magico ad attivazione (in genere una bacchetta). Per utilizzare questa capacità, deve possedere il talento di creazione oggetto appropriato per la creazione dell'oggetto magico ad attivazione che sta usando. Usare la metamagia sugli incantesimi ad attivazione consuma un numero di cariche aggiuntive dell'oggetto pari al numero di livelli effettivi dell'incantesimo che il talento di metamagia applicherebbe al livello dell'incantesimo. Ad esempio, un'incantatrix può usare Incantesimi Rapidi per modificare un incantesimo lanciato da una bacchetta consumando 5 cariche ($1$ + $4$ cariche aggiuntive per l'incremento di slot incantesimo). In alternativa, può applicare Incantesimi Potenziati all'effetto consumando 3 cariche, o attivarlo silenziosamente, consumando 2 cariche. Incantesimi Immobili non conferisce alcun beneficio se applicato a un oggetto magico ad attivazione.
+Un'incantatrix non può applicare un talento di metamagia ad un oggetto magico ad attivazione se il livello dell'incantesimo contenuto nell'oggetto, aumentato del modificatore del talento di metamagia, supera il livello massimo di incantesimo che l'incantatrix è in grado di lanciare.
 Un'incantatrix non può usare questa capacità quando usa un oggetto magico ad attivazione che non fa uso di cariche, come ad esempio una collana del rosario.\\
 
 \includegraphics[width=7cm]{incantatrix.png}
 
-\textbf{Controllo Magico:} Un'incantatrix può usare un'abilità di controllo magico un numero di volte al giorno pari a 1 + Mod Int. Un'incantatrix conosce le seguenti abilità di controllo magico:
+\textbf{Controllo Magico:} Un'incantatrix può usare un'abilità di controllo magico un numero di volte al giorno pari a $1$ + Mod Int. Un'incantatrix conosce le seguenti abilità di controllo magico:
 
 \textit{Afferrare concentrazione (Sop):} Al 6° livello, un'incantatrix acquisisce la capacità di strappare il controllo di un incantesimo che richiede concentrazione (come ad esempio evoca sciame, immagine maggiore o implosione) da un altro incantatore entro 9 metri. Se l'incantatore bersaglio è consenziente, il trasferimento di concentrazione avviene automaticamente. In caso contrario, l'incantatrix e l'incantatore bersaglio effettuano una prova contrapposta di livello dell'incantatore. Un incantatore divino ottiene un bonus di +2 a questa prova. Se l'incantatrix vince la prova, acquisisce il controllo dell'incantesimo fintanto che mantiene la concentrazione o finché la durata dell'incantesimo originale non si esaurisce. L'incantesimo funziona come se fosse stata l'incantatrix a lanciarlo (anche se si tratta di un incantesimo che l'incantatrix non è in grado di lanciare), con la sola differenza che eventuali variabili determinate quando l'incantesimo è stato lanciato (compreso il suo livello dell'incantatore) rimangono quelle determinate dall'incantatore originario. L'incantatore originario può essere influenzato dal suo stesso incantesimo, anche se riceve un bonus di circostanza +2 a qualsiasi tiro salvezza concesso contro di esso. Se l'incantatrix abbandona la concentrazione prima che la durata dell'incantesimo si esaurisca, l'incantatore può riassumere il controllo sul suo incantesimo superando una prova di livello dell'incantatore (CD $15$ + livello dell'incantesimo). Se non la supera, nessuno mantiene il controllo dell'incantesimo.
 
@@ -1385,7 +1388,7 @@ Un'incantatrix non può usare questa capacità quando usa un oggetto magico ad a
 
 \textbf{Metamagia istantanea (Sop):} Per una volta al giorno, un'incantatrix di almeno 7° livello può applicare un singolo talento di metamagia in suo possesso a un incantesimo, senza prepararlo a quello scopo in precedenza (se prepara i suoi incantesimi). Quindi, l'incantesimo preparato di un mago funziona come se fosse stato preparato con il talento di metamagia in questione, ma non occupa uno slot incantesimo di livello più alto. L'incantesimo di un bardo o di uno stregone viene lanciato senza modificare il suo tempo di lancio, ma funziona come se fosse stato lanciato sotto l'effetto di un talento di metamagia. Un'incantatrix di 9° livello può usare questo potere due volte al giorno. Un'incantatrix non può usare questa capacità se l'incantesimo sotto l'effetto del talento di metamagia utilizzerebbe normalmente uno slot incantesimo di un livello che l'incantatore non è in grado di lanciare.\\
 
-\textbf{Metamagia migliorata (Sop):} Al 10° livello, un'incantatrix ha raggiunto una padronanza tale della metamagia che ogni volta che usa un talento di metamagia, l'incremento richiesto per il livello di incantesimo (se esiste) viene ridotto di uno (fino a un minimo di livello dell'incantesimo +1). Ad esempio, una maga incantatrix potrebbe preparare una palla di fuoco rapida come incantesimo di 6° livello invece che di 7° livello.
+\textbf{Metamagia migliorata (Sop):} Al 10° livello, un'incantatrix ha raggiunto una padronanza tale della metamagia che ogni volta che usa un talento di metamagia, l'incremento richiesto per il livello di incantesimo (se esiste) viene ridotto di uno (fino a un minimo di livello dell'incantesimo +$1$). Ad esempio, una maga incantatrix potrebbe preparare una palla di fuoco rapida come incantesimo di 6° livello invece che di 7° livello.
 Questo beneficio viene applicato anche alle altre capacità di classe dell'incantatrix. Quindi, la CD per usare le sue capacità di effetto di metamagia o di metamagia collaborativa viene ridotta adeguatamente rispetto ai talenti di metamagia usati e vengono consumate meno cariche quando si usa la metamagia sugli incantesimi ad attivazione.\\
 
 \end{multicols}
@@ -1446,19 +1449,19 @@ Questo beneficio viene applicato anche alle altre capacità di classe dell'incan
 
 \textbf{Avanzamento continuo:}  I livelli di LdSA si cumulano con i livelli di altre classi allo scopo di scacciare o intimorire i non morti. Inoltre i livelli pari sono considerati come livelli da chierico per determinare la potenza dei poteri di dominio\footnote{Nella tabella li ho indicati con d.g.p.: domain granted power, per motivi di spazio.}.\\
 
-\textbf{Armatura di brillanio (Str):}  Al livello 1, un LdSA impara a creare e indossare la caratteristica armatura di Brillanio usata dall'Ordine dei Combattenti della Spada Alata. Può produrre un'armatura di Brillanio media o pesante che normalmente sarebbe composta principalmente di metallo. L'armatura di Brillanio ha lo stesso costo e lo stesso tempo di creazione di una normale armatura di quel tipo. È possibile spendere più tempo e denaro per produrre armature chiodate o perfette (che possono poi essere ulteriormente migliorate attraverso la magia). Solo un personaggio con questa capacità può indossare efficacemente un'armatura di Brillanio. L'armatura concede un bonus di +4 alle prove di Diplomazia effettuate mentre è indossata. Inoltre, l'armatura garantisce riduzione del danno 1/tagliente se è un'armatura media o riduzione del danno 2/tagliente se è un'armatura pesante. L'armatura di Brillanio non è metallica e non è soggetta a incantesimi come gelo metallo o ad attacchi speciali che prendono di mira il metallo, come il tocco di un rugginofago.\\
+\textbf{Armatura di brillanio (Str):}  Al livello 1, un LdSA impara a creare e indossare la caratteristica armatura di Brillanio usata dall'Ordine dei Combattenti della Spada Alata. Può produrre un'armatura di Brillanio media o pesante che normalmente sarebbe composta principalmente di metallo. L'armatura di Brillanio ha lo stesso costo e lo stesso tempo di creazione di una normale armatura di quel tipo. È possibile spendere più tempo e denaro per produrre armature chiodate o perfette (che possono poi essere ulteriormente migliorate attraverso la magia). Solo un personaggio con questa capacità può indossare efficacemente un'armatura di Brillanio. L'armatura concede un bonus di +4 alle prove di Diplomazia effettuate mentre è indossata. Inoltre, l'armatura garantisce riduzione del danno $1$/tagliente se è un'armatura media o riduzione del danno 2/tagliente se è un'armatura pesante. L'armatura di Brillanio non è metallica e non è soggetta a incantesimi come gelo metallo o ad attacchi speciali che prendono di mira il metallo, come il tocco di un rugginofago.\\
 
 \includegraphics[width=6cm]{ldsa.png}
 
-\textbf{Punire (Sop):} Al livello 2, si può spendere un uso giornaliero della propria capacità scacciare non morti come azione veloce per trasformare l’attacco in mischia in una punizione. Ottieni un bonus pari al tuo modificatore di Carisma ai tiri per colpire e infliggi danni extra pari al tuo livello effettivo totale di scacciare. Il tuo attacco di punire non è limitato dall'allineamento o dalla razza; puoi tentare di colpire qualsiasi nemico. Un LdSA può decidere, oltre a spendere un uso di scacciare non morti, di sacrificare anche un incantesimo preparato o uno slot incantesimo. In questo caso, nei round successivi a quello in cui ha eseguito la punizione, l’LdSA ottiene un bonus sacro ai danni dell’arma pari al livello dell’incantesimo sacrificato, per un numero di round pari al suo livello effettivo di scacciare/$4$ (minimo $1$). Ad eccezione di quanto indicato qui, questa capacità funziona come la capacità \textit{punire il male} del Paladino (PH $44$).\\
+\textbf{Punire (Sop):} Al livello 2, un LdSA può spendere un uso giornaliero della propria capacità scacciare non morti come azione veloce per trasformare l’attacco in mischia in una punizione. Il personaggio ottiene un bonus pari al suo modificatore di Carisma ai tiri per colpire e infligge danni extra pari al suo livello effettivo totale di scacciare. Questa capacità di punire non è limitata dall'allineamento o dalla razza; il personaggio può tentare di colpire qualsiasi nemico. Un LdSA può decidere, oltre a spendere un uso di scacciare non morti, di sacrificare anche un incantesimo preparato o uno slot incantesimo. In questo caso, nei round successivi a quello in cui ha eseguito la punizione, l’LdSA ottiene un bonus sacro ai danni dell’arma pari al livello dell’incantesimo sacrificato, per un numero di round pari al suo livello effettivo di scacciare/$4$ (minimo $1$). Ad eccezione di quanto indicato qui, questa capacità funziona come la capacità \textit{punire il male} del Paladino (PH $44$).\\
 
-\textbf{Lancio spontaneo modificato (Str):} Al livello 2, un LdSA perde la capacità di lanciare spontaneamente incantesimi curare. Invece, puoi sostituire gli incantesimi da chierico preparati in precedenza con qualsiasi incantesimo di livello uguale o inferiore dal dominio della Guerra.\\
+\textbf{Lancio spontaneo modificato (Str):} Al livello 2, un LdSA perde la capacità di lanciare spontaneamente incantesimi curare. Invece, può sostituire gli incantesimi da chierico preparati in precedenza con qualsiasi incantesimo di livello uguale o inferiore dal dominio della Guerra.\\
 
-\textbf{Arma specializzata:} Al livello 3, un LdSA ottiene il talento \textit{“rma specializzata} sull’arma della divinità gratuitamente, anche se non ne rispetta i prerequisiti. Se è già in possesso di questo talento, può sceglierne un altro dalla lista dei talenti del Guerriero.\\
+\textbf{Arma specializzata:} Al livello 3, un LdSA ottiene il talento \textit{Arma specializzata} sull’arma della divinità. Se è già in possesso di questo talento, può sceglierne un altro dalla lista dei talenti del Guerriero.\\
 
 \textbf{Incanalare incantesimi:} Al livello 4, un LdSA può incanalare qualsiasi incantesimo che ha a disposizione per lanciarlo attraverso la sua arma da mischia. Farlo richiede un'azione di movimento e consuma un incantesimo preparato o uno slot incantesimo proprio come se l'incantesimo fosse stato lanciato. L'incantesimo incanalato ha effetto sul prossimo bersaglio attaccato con successo con quell'arma, anche se i tiri salvezza e la resistenza agli incantesimi si applicano comunque normalmente. Anche se normalmente l'incantesimo ha effetto su un'area o è un raggio, in questo caso ha comunque effetto solo sul bersaglio. In caso di successo, l'incantesimo viene scaricato dall'arma, che può quindi contenere un altro incantesimo. Un LdSA può incanalare gli incantesimi in una sola arma alla volta. Un incantesimo incanalato in un'arma viene perso se non viene usato entro 8 ore.\\
 
-\textbf{Armatura di brillanio migliorata (Str):}  Ai livelli 5, 8 e 11, la riduzione del danno fornita dall’armatura di Brillanio aumenta di 1. Inoltre, un LdSA ottiene ulteriori benefici mentre indossa questa armatura, come descritto di seguito:
+\textbf{Armatura di brillanio migliorata (Str):}  Ai livelli 5, 8 e 11, la riduzione del danno fornita dall’armatura di Brillanio aumenta di $1$. Inoltre, un LdSA ottiene ulteriori benefici mentre indossa questa armatura, come descritto di seguito:
 \begin{itemize}
 	\item L’armatura di Brillanio garantisce l'immunità agli attacchi stordenti e ai danni non letali.
 	\item L’armatura di Brillanio ha una probabilità del $25\%$ di negare qualsiasi colpo critico o attacco furtivo effettuato contro un LdSA. Inoltre, consente di agire e combattere senza penalità anche mentre un LdSA è inabile o morente.
@@ -1467,9 +1470,9 @@ Questo beneficio viene applicato anche alle altre capacità di classe dell'incan
 
 \textbf{Spada alata (Str):} Al livello 6, se un LdSA ha almeno 5 gradi in Artigianato (fabbricazione di armi), può fabbricare armi di Brillanio. La spada alata ha lo stesso costo e lo stesso tempo per creare un'arma normale di quel tipo (ovvero uno spadone). È possibile spendere più tempo e denaro per produrre una spada alata perfetta (che può poi essere ulteriormente potenziata attraverso la magia). Nelle mani di un LdSA di livello 6 o superiore, un'arma di Brillanio infligge +$1$d$6$ danni contro le creature caotiche e/o malvagie.\\
 
-\textbf{Lancio spontaneo rapido (Str):} Al livello 9, qualsiasi incantesimo del dominio della Guerra che un LdSA lancia spontaneamente richiede solo un'azione veloce se il suo normale tempo di lancio non è superiore a 1 azione standard, o un'azione standard se il suo normale tempo di lancio è 1 azione di round completo.\\
+\textbf{Lancio spontaneo rapido (Str):} Al livello 9, qualsiasi incantesimo del dominio della Guerra che un LdSA lancia spontaneamente richiede solo un'azione veloce se il suo normale tempo di lancio non è superiore a $1$ azione standard, o un'azione standard se il suo normale tempo di lancio è $1$ azione di round completo.\\
 
-\textbf{Colpo dell'ala affilata (Sop):} Al livello 12, una volta al giorno, si può usare una Spada Alata (vedi sopra) per abbattere un nemico. Un LdSA deve decidere di usare questa capacità prima che venga effettuato il tiro per colpire. Se l'attacco ha successo, il bersaglio deve superare un Tiro Salvezza su Tempra (CD $7$ + il livello da LdSA + il modificatore di Car) o morire.\\
+\textbf{Colpo dell'ala affilata (Sop):} Al livello 12, una volta al giorno, il personaggio può usare una Spada Alata (vedi sopra) per abbattere un nemico. Un LdSA deve decidere di usare questa capacità prima che venga effettuato il tiro per colpire. Se l'attacco ha successo, il bersaglio deve superare un Tiro Salvezza su Tempra (CD $7$ + il livello da LdSA + il modificatore di Car) o morire.\\
 
 \textbf{Fusione col brillanio (Str):} Al livello 13, l’armatura di Brillanio si fonde col corpo di un LdSA e non può essere rimossa senza ucciderlo. Tuttavia, ottiene immunità agli effetti di morte, danni alle caratteristiche ai punteggi di caratteristica fisica, risucchio di caratteristica, risucchio di energia e morte per danni ingenti.
 \end{multicols}
@@ -1514,26 +1517,33 @@ Questo beneficio viene applicato anche alle altre capacità di classe dell'incan
 \section{Descrizione Talenti}
 In questa sezione sono riportati tutti i talenti che hanno subito cambiamenti rispetto alle regole originali.
 
-\subsection{Metamagia Divina [divino]}
+\subsection{Metamagia Divina [\textsc{divino}]}
 Il personaggio può incanalare energia in alcuni dei suoi incantesimi divini per renderli più potenti.\\
 \textbf{Prerequisiti}: Capacità di scacciare o intimorire non morti\\
 \textbf{Beneficio}: Quando seleziona questo talento, il personaggio sceglie un talento di metamagia che possiede. Questo talento si applica solo a quel talento di metamagia. Come azione gratuita, il personaggio può trarre l'energia dallo scacciare o intimorire non morti e usarla per applicare un talento di metamagia agli incantesimi divini che conosce. Deve spendere un tentativo di scacciare o intimorire non morti, più un tentativo extra per ogni incremento di livello nel talento di metamagia che sta usando. Per esempio, il chierico Jozan potrebbe sacrificare tre tentativi di scacciare per lanciare una \textit{punizione sacra} potenziata. Siccome sta sfruttando energia positiva o negativa per aumentare i propri incantesimi, lo slot incantesimo per l'incantesimo non cambia.\\
 Il personaggio non può usare il talento Metamagia Divina per applicare talenti di metamagia che renderebbero il livello effettivo dell’incantesimo superiore al livello più alto di incantesimo che può normalmente lanciare.\\
 \textbf{Speciale}: Questo talento può essere selezionato più volte. Ogni volta che seleziona questo talento, il personaggio sceglie un diverso talento di metamagia a cui applicarlo.
 
+\subsection{Metamagia Pratica [\textsc{generale}]}
+Il personaggio può applicare un talento di metamagia selezionato più facilmente.\\
+\textbf{Prerequisiti}: Sapienza Magica 8 gradi, capacità di lanciare spontaneamente incantesimi arcani di 3° livello, qualsiasi talento di metamagia, sottotipo \textit{Dragonblood}\\
+\textbf{Beneficio}: Quando seleziona questo talento, il personaggio sceglie un talento di metamagia che possiede. Quando il personaggio applica il talento di metamagia selezionato ad un incantesimo lanciato spontaneamente, l'incremento di livello dovuto al talento di metamagia viene ridotto di $1$, fino ad un minimo di +$1$. Tuttavia per determinare il livello di incantesimo massimo a cui si può applicare il talento di metamagia, si considera comunque l'aumento di livello originale.
+Per esempio se lo stregone Hennet di 7° livello ha scelto Metamagia Pratica (Incantesimi Potenziati), può applicare Incantesimi Potenziati utilizzando slot di un solo livello più alto del normale invece che di due livelli più alto. Non può però applicare Incantesimi Focalizzati ad incantesimi di 2° livello perché a cose normali occuperebbero slot di 4° livello, che non possiede ancora.\\
+\textbf{Speciale}: Questo talento può essere selezionato più volte. Ogni volta che seleziona questo talento, il personaggio sceglie un diverso talento di metamagia a cui applicarlo.
 
-\subsection{Metamagia Rapida [generale]}
+\subsection{Metamagia Rapida [\textsc{generale}]}
 \label{rapidmetamagic}
 Il personaggio possiede una padronanza straordinaria della sua magia, che permette di modificare gli incantesimi sul momento molto più rapidamente degli altri.\\
 \textbf{Prerequisiti}: Sapienza Magica 6 gradi, abilità di lanciare incantesimi spontaneamente\\
-\textbf{Beneficio}: Quando applichi un talento di metamagia a un incantesimo lanciato spontaneamente, il lancio impiega solo il tempo di lancio normale.
+\textbf{Beneficio}: Quando applichi un talento di metamagia a un incantesimo lanciato spontaneamente, il lancio impiega solo il tempo di lancio normale.\\
+\textbf{Normale}: Un incantatore spontaneo che lancia un incantesimo metamagizzato impiega un'azione di round completo per incantesimi con tempo di lancio pari ad un'azione standard, o un'azione di round completo aggiuntiva per incantesimi con tempo di lancio più lungo.
 
-\subsection{Asceta Ombra [generale]}
+\subsection{Asceta Ombra [\textsc{generale}]}
 Il personaggio praticata una tecnica segreta che combina le sue notevoli abilità nel combattimento senz’armi con la profonda conoscenza del suo ki interiore\\
 \textbf{Prerequisiti}: Potere \textit{ki}, colpo \textit{ki} (magia)\\
 \textbf{Beneficio}: I livelli da monaco e da ninja si sommano al fine del calcolo degli utilizzi giornalieri dei poteri \textit{ki}. Per esempio, un monaco di 4° livello/ninja di 2° livello con questo talento può usare i suoi poteri ki un numero di volte al giorno pari a 3 (metà della somma tra i suoi livelli da monaco e da ninja) + il suo bonus di Saggezza (se ne ha uno).\\
-I livelli da monaco e da ninja si sommano anche al fine di determinare il danno del colpo senz'armi, oltre alla capacità di classe colpo \textit{ki}. Per esempio, un monaco di 4° livello/ninja di 6° livello infligge 1d10 danni col suo colpo senz'armi e può superare la riduzione del danno come un'arma allineata legale e magica (come un monaco di 10° livello).\\
-I livelli da monaco e da ninja si sommano anche al fine di determinare il bonus alla CA, tuttavia il bonus di Saggezza si somma una sola volta. Per esempio, un monaco di 8° livello/ninja di 7° livello ha un bonus alla CA pari a +3 + il suo bonus di Saggezza (come un monaco di 15° livello).
+I livelli da monaco e da ninja si sommano anche al fine di determinare il danno del colpo senz'armi, oltre alla capacità di classe colpo \textit{ki}. Per esempio, un monaco di 4° livello/ninja di 6° livello infligge $1$d$10$ danni col suo colpo senz'armi e può superare la riduzione del danno come un'arma allineata legale e magica (come un monaco di $10$° livello).\\
+I livelli da monaco e da ninja si sommano anche al fine di determinare il bonus alla CA, tuttavia il bonus di Saggezza si somma una sola volta. Per esempio, un monaco di 8° livello/ninja di 7° livello ha un bonus alla CA pari a +3 + il suo bonus di Saggezza (come un monaco di $15$° livello).
 Inoltre, il personaggio può diventare multiclasse liberamente tra le classi di monaco e ninja. Deve però rimanere legale per mantenere le proprie capacità da monaco e acquisire livelli da monaco. 
 
 \end{multicols}
